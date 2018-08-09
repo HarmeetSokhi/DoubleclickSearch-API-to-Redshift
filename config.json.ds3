@@ -1,0 +1,61 @@
+
+{
+ "downloadFormat": "csv",
+ "maxRowsPerFile": 2000000,
+ "reportType": "campaign",
+ "statisticsCurrency": "agency",
+ "reportScope": {
+  "agencyId": "%s",
+  "advertiserId": "%s"
+ },
+ "columns": [
+  {
+   "columnName": "Account"
+  },
+  {
+   "columnName": "campaign"
+  },
+  {
+   "columnName": "Clicks"
+  },
+  {
+   "columnName": "Impr"
+  },
+  {
+   "savedColumnName": "Applications"
+  },
+  {
+   "columnName": "avgPos"
+  },
+  {
+   "savedColumnName": "Declined"
+  },
+  {
+   "savedColumnName": "Referred"
+  },
+  {
+   "savedColumnName": "Approved"
+  },
+ ],
+ "timeRange": {
+  "startDate": "%s",
+  "endDate": "%s"
+ },
+ "filters": [
+  {
+   "column": {
+    "columnName": "Account"
+   },
+   "operator": "doesNotContainSubstring",
+   "values": [
+    "test"
+   ]
+  },
+  {
+   "column": {
+    "columnName": "DeviceSegment"
+   },
+   "operator": "isNotNull"
+  }
+ ]
+}
